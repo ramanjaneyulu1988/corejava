@@ -1,0 +1,28 @@
+package app1;
+
+public class Calculator 
+{
+	public int add(int i, int j)
+	{
+		int k = i+j;
+		return k;
+	}
+	
+	public int sub(int i, int j)
+	{
+		int k = i-j;
+		return k;
+	}
+	
+	public void mul(int i, int j)
+	{
+		int k = i*j;
+		System.out.println("K value is : "+k);
+	}
+	
+	public void div(int i, int j)
+	{
+		int k = i/j;
+		System.out.println("K value is : "+k);
+	}
+}

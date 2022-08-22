@@ -1,0 +1,18 @@
+package app2;
+
+import app1.Calculator;
+
+public class AdditionExample extends Calculator {
+
+	public static void main(String[] args) {
+		
+		AdditionExample c = new AdditionExample();
+		
+//		System.out.println(c.age);
+		
+//		int k = c.add(20, 30);
+//		System.out.println(k);
+		
+		
+	}
+}
