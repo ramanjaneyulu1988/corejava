@@ -1,5 +1,4 @@
-.metadata/*
+.metadata*
+.pluggins*
 *.class
-*.metadata/*
-target/
-bin/
+/bin/*
