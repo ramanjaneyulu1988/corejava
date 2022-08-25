@@ -7,5 +7,7 @@ public class Addition extends Calculator
 		Addition addition = new Addition();
 		
 		addition.add(40, 60);
+		
+		System.out.println("main");
 	}
 }
