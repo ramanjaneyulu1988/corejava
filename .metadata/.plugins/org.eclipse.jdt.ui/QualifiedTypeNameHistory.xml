@@ -5,4 +5,13 @@
     <fullyQualifiedTypeName name="app3.ScannerExample"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="oops.inheritance.Parent"/>
+    <fullyQualifiedTypeName name="oops.inheritance.Child"/>
+    <fullyQualifiedTypeName name="oops.inheritance.HondaCar"/>
+    <fullyQualifiedTypeName name="oops.inheritance.Calculator"/>
+    <fullyQualifiedTypeName name="org.graalvm.compiler.core.common.type.ArithmeticOpTable.BinaryOp.Add"/>
+    <fullyQualifiedTypeName name="oops.inheritance.Addition"/>
+    <fullyQualifiedTypeName name="oops.polymorphism.BananaTree"/>
+    <fullyQualifiedTypeName name="oops.abstraction.Example1"/>
+    <fullyQualifiedTypeName name="oops.encapsulation.Employee"/>
 </qualifiedTypeNameHistroy>
