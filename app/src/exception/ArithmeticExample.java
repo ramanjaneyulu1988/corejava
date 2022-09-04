@@ -14,7 +14,7 @@ public class ArithmeticExample {
 			int k = i/j;
 			System.out.println(k);
 		}
-		catch (NullPointerException e) {
+		catch (ArithmeticException e) {
 			System.out.println("NullPointerException");
 		}
 		catch (RuntimeException e) {
