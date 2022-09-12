@@ -9,7 +9,7 @@ public class HashSetExample {
 
 	public static void main(String[] args) {
 
-		Set set = new HashSet(); // auto upcasting
+		Set<String> set = new HashSet<>(); // auto upcasting
 
 		set.add("abc");
 		set.add("xyz");
@@ -23,10 +23,12 @@ public class HashSetExample {
 		set.add("xyz");
 		set.add("xyz");
 		set.add("xyz");
+		
+		set.add("123");
 
 		System.out.println(set);
 		
-		List list = new ArrayList(set);
+		List<String> list = new ArrayList<>(set);
 		System.out.println(list);
 	}
 }

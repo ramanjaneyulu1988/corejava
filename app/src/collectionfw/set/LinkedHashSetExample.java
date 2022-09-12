@@ -7,7 +7,7 @@ public class LinkedHashSetExample {
 
 	public static void main(String[] args) {
 		
-		Set set = new LinkedHashSet(); // auto upcasting
+		Set<String> set = new LinkedHashSet<>(); // auto upcasting
 		
 		set.add("abc");
 		set.add("xyz");
