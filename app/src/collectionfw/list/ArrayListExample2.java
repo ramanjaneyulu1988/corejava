@@ -1,4 +1,4 @@
-package collectionfw;
+package collectionfw.list;
 
 import java.util.ArrayList;
 import java.util.List;
