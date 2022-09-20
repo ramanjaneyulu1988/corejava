@@ -1,13 +1,15 @@
 package com.jdbc.jdbcexample;
 
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.sql.Statement;
+
+import org.apache.log4j.Logger;
 
 public class SelectExample1 {
 
+	public static Logger log = Logger.getLogger(InsertExample1.class);
+	
 	public static void main(String[] args) {
 	
 		SelectExample1.retriveData();
@@ -20,9 +22,7 @@ public class SelectExample1 {
 		// Open a connection
 		try
 		{
-			Class.forName("com.mysql.jdbc.Driver");  
-			con = DriverManager.getConnection(  
-			"jdbc:mysql://localhost:3306/corejava_db","root","root");  
+			con = DBConnection.getDBConnection();
 			
 			// Create a statement and Execute Query
 			String sql = "select * from student";
@@ -30,12 +30,12 @@ public class SelectExample1 {
 			ResultSet rs = stmt.executeQuery(sql);
 			while(rs.next())
 			{
-				System.out.println(rs.getString("id"));
-				System.out.println(rs.getString("Firstname"));
-				System.out.println(rs.getString("Lastname"));
-				System.out.println(rs.getString("Age"));
+				log.info(rs.getString("id"));
+				log.info(rs.getString("Firstname"));
+				log.info(rs.getString("Lastname"));
+				log.info(rs.getString("Age"));
 				
-				System.out.println("================================");
+				log.info("================================");
 			}
 		}
 		catch (Exception e)
@@ -45,12 +45,7 @@ public class SelectExample1 {
 		finally
 		{
 			// Close connection
-			try {
-				con.close();
-			} catch (SQLException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+			DBConnection.closeDBConnection(con);
 		}
 	}
 }
