@@ -58,4 +58,6 @@
     <fullyQualifiedTypeName name="com.jdbc.jdbcexample.DBConnection"/>
     <fullyQualifiedTypeName name="org.apache.log4j.Logger"/>
     <fullyQualifiedTypeName name="com.jdbc.jdbcexample.InsertExample1"/>
+    <fullyQualifiedTypeName name="java.lang.Runnable"/>
+    <fullyQualifiedTypeName name="java.lang.Thread"/>
 </qualifiedTypeNameHistroy>
